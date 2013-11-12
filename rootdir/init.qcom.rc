@@ -24,6 +24,8 @@ on early-init
 on init
     mkdir /mnt/shell/emulated 0700 shell shell
     mkdir /storage/emulated 0555 root root
+    mkdir /mnt/media_rw/sdcard1 0555 root root
+    mkdir /mnt/media_rw/usbdisk 0555 root root
     mkdir /storage/sdcard1 0775 system system
     mkdir /storage/usbdisk 0775 system system
 
@@ -446,7 +448,7 @@ service irsc_util /system/bin/logwrapper /system/bin/irsc_util "/etc/sec_config"
     oneshot
 
 service rmt_storage /system/bin/rmt_storage
-    class main
+    class core
     user root
 
 # Fast Dormancy
@@ -553,7 +555,7 @@ service hw_config /system/bin/sh /system/etc/hw_config.sh
 service wpa_supplicant /system/bin/wpa_supplicant \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
     -I/system/etc/wifi/wpa_supplicant_overlay.conf \
-    -e/data/misc/wifi/entropy.bin
+    -O/data/misc/wifi/sockets \
     #   we will start as root and wpa_supplicant will switch to user wifi
     #   after setting up the capabilities required for WEXT
     #   user wifi
@@ -568,7 +570,8 @@ service p2p_supplicant /system/bin/wpa_supplicant \
     -I/system/etc/wifi/p2p_supplicant_overlay.conf -N \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
     -I/system/etc/wifi/wpa_supplicant_overlay.conf \
-    -e/data/misc/wifi/entropy.bin -puse_p2p_group_interface=1
+    -O/data/misc/wifi/sockets -puse_p2p_group_interface=1 \
+    -e/data/misc/wifi/entropy.bin -g@android:wpa_wlan0
 #   we will start as root and wpa_supplicant will switch to user wifi
 #   after setting up the capabilities required for WEXT
 #   user wifi
