@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b77b57d_23321bf0",
+        "filename": "fusion3.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1000008
+      },
+      "writtenOn": "2014-06-29T15:22:08Z",
+      "side": 1,
+      "message": "This should be squashed with the other change",
+      "revId": "f461cb33cbe81fa2d6713544c08e0103a0849b95",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
