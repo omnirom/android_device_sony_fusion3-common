@@ -75,7 +75,6 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 BOARD_USE_SONY_MACUPDATE := true
 
 # Camera
-COMMON_GLOBAL_CFLAGS += -DQCOM_BSP_CAMERA_ABI_HACK
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Graphics
@@ -117,11 +116,12 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_QCOM_AUDIO_VARIANT := caf
 BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_COMPRESSED_AUDIO := true
+<<<<<<< HEAD
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
-# RIL
-BOARD_RIL_NO_CELLINFOLIST := true
+=======
+BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
+>>>>>>> 4597988... Enable usage of new csd-client
 
 # QCOM enhanced A/V
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
@@ -178,7 +178,6 @@ BOARD_SEPOLICY_UNION += \
     netmgrd.te \
     qmux.te \
     rild.te \
-    rmt.te \
     surfaceflinger.te \
     system.te \
     tee.te \
