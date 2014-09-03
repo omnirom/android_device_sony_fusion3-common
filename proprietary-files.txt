@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 bin/btnvtool
 bin/cal_data_manager
 bin/clearpad_fwloader
@@ -10,7 +15,11 @@ bin/mpdecision
 bin/netmgrd
 bin/qmuxd
 bin/qseecomd
+<<<<<<< HEAD
 bin/rmt_storage
+=======
+>>>>>>> 213a0ce... drop rmt_storage
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 bin/system_monitor
 bin/ta2bin
 bin/taimport
@@ -65,12 +74,31 @@ etc/firmware/wcnss.b05
 etc/firmware/wcnss.mdt
 etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+<<<<<<< HEAD
 lib/hw/gps.default.so
 lib/hw/vendor-camera.qcom.so
 lib/hw/vendor-lights.default.so
 lib/libacdbloader.so
 lib/libadsprpc.so
 lib/libals.so
+=======
+<<<<<<< HEAD
+lib/libsysmon.so
+=======
+lib/egl/eglsubAndroid.so
+lib/egl/libEGL_adreno200.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+lib/egl/libq3dtools_adreno200.so
+lib/hw/gps.default.so
+lib/hw/camera.vendor.qcom.so
+lib/hw/lights.vendor.default.so
+lib/libacdbloader.so
+lib/libadsprpc.so
+lib/libals.so
+lib/libc2d2_a3xx.so
+lib/libC2D2.so
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/libcald_client.so
 lib/libcald_hal.so
 lib/libcald_imageutil.so
@@ -80,7 +108,10 @@ lib/libcamera_clientsemc.so
 lib/libcameralight.so
 lib/libcredential-manager-service.so
 lib/libcsd-client.so
+<<<<<<< HEAD
 lib/libdiag.so
+=======
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/libdrmdiag.so
 lib/libdrmfs.so
 lib/libdsi_netctrl.so
@@ -91,6 +122,10 @@ lib/libfmradio.sony-iris.so
 lib/libgemini.so
 lib/lib_get_secure_mode.so
 lib/libgps.utils.so
+<<<<<<< HEAD
+=======
+lib/libgsl.so
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/libidd.so
 lib/libidl.so
 lib/libimage-jpeg-dec-omx-comp.so
@@ -98,8 +133,16 @@ lib/libimage-jpeg-enc-omx-comp.so
 lib/libimage-omx-common.so
 lib/libkeyctrl.so
 lib/liblights-core.so
+<<<<<<< HEAD
 lib/libloc_adapter.so
 lib/libloc_api_v02.so
+=======
+lib/libllvm-a3xx.so
+lib/libloc_adapter.so
+lib/libloc_api_v02.so
+lib/libloc_core.so
+lib/libloc_ds_api.so
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/libloc_eng.so
 lib/libmercury.so
 lib/libMiscTaAccessor.so
@@ -132,21 +175,40 @@ lib/libqcci_legacy.so
 lib/libqc-opt.so
 lib/libqdi.so
 lib/libqdp.so
+<<<<<<< HEAD
 lib/libqmi_cci.so
 lib/libqmi_client_qmux.so
 lib/libqmi_common_so.so
 lib/libqmi_csi.so
 lib/libqmi_encdec.so
+=======
+lib/libqmi_client_qmux.so
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/libqmiservices.so
 lib/libqmi.so
 lib/libQSEEComAPI.so
 lib/libril-qc-qmi-1.so
+<<<<<<< HEAD
 lib/libsensors_akm8963.so
 lib/libsysmon_idd.so
 lib/libsysmon_jni.so
 lib/libsysmon.so
 lib/libsys-utils.so
 lib/libta.so
+=======
+lib/libsc-a3xx.so
+lib/libsensors_akm8963.so
+>>>>>>> 37401c0... add/update/move libraries for 10.5.A.0.230
+lib/libsysmon_idd.so
+lib/libsysmon_jni.so
+<<<<<<< HEAD
+=======
+lib/libsysmon.so
+lib/libsys-utils.so
+lib/libta.so
+lib/libtime_genoff.so
+>>>>>>> c447705... add libtime_genoff.so, needed by RIL
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 lib/sysmon/sysmon_batt_therm.so
 lib/sysmon/sysmon_bl_therm.so
 lib/sysmon/sysmon_charge_current_limit_level.so
@@ -175,6 +237,11 @@ lib/sysmon/sysmon_tsens_tz_sensor8.so
 lib/sysmon/sysmon_tsens_tz_sensor9.so
 lib/sysmon/sysmon_usb_current_limit_level.so
 lib/sysmon/sysmon_wlan_limit.so
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
 vendor/camera/KMO08BN0_IMX111.dat
 vendor/camera/LGI02BN0.dat
 vendor/camera/LGI08BN2_DW9714.dat
@@ -194,3 +261,17 @@ vendor/camera/SOI13BS2.dat
 vendor/camera/SOI13BS2_DW9735.dat
 vendor/camera/SOI13BS2_IMX135.dat
 vendor/camera/SOI13BS9.dat
+<<<<<<< HEAD
+=======
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/lib/libdiag.so
+vendor/lib/libgeofence.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+>>>>>>> 37401c0... add/update/move libraries for 10.5.A.0.230
+>>>>>>> 1ca5b58... [DO NOT MERGE]Squashed Commits of Kitkat Bringup
