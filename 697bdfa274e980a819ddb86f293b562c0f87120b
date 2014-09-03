@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0b49054d_3bc60b9f",
+        "filename": "rootdir/system/etc/gps.conf",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2014-09-03T03:24:53Z",
+      "side": 1,
+      "message": "#XTRA_SERVER_1\u003dhttp://xtra1.gpsonextra.net/xtra.bin\n#XTRA_SERVER_2\u003dhttp://xtra2.gpsonextra.net/xtra.bin\n#XTRA_SERVER_3\u003dhttp://xtra3.gpsonextra.net/xtra.bin\n\nThese entries are present (commented out) on Odin - Android 4.4.2",
+      "revId": "697bdfa274e980a819ddb86f293b562c0f87120b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
