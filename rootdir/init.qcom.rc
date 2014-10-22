@@ -508,6 +508,9 @@ service tad /sbin/tad_static /dev/block/mmcblk0 1,16
     socket tad stream 0660 system system
     disabled
 
+service charger /charger
+    class charger
+
 # SONY: Trim Area QMI client
 # Should have the same class as qmuxd, to be sure that it will be restarted in same way
 # as qmuxd if phone is encrypted. This is a workaround, because sometimes
