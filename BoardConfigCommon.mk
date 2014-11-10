@@ -184,3 +184,6 @@ BOARD_SEPOLICY_UNION += \
     wpa_supplicant.te
 
 TARGET_USES_LOGD := false
+
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
