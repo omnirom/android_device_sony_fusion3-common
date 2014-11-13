@@ -66,8 +66,8 @@ etc/firmware/wcnss.mdt
 etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 lib/hw/gps.default.so
-lib/hw/vendor-camera.qcom.so
-lib/hw/vendor-lights.default.so
+lib/hw/camera.vendor.qcom.so
+lib/hw/lights.vendor.default.so
 lib/libacdbloader.so
 lib/libadsprpc.so
 lib/libals.so
