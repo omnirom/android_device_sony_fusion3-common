@@ -153,13 +153,13 @@ TW_MAX_BRIGHTNESS := 255
 TW_NO_USB_STORAGE := true
 TW_NO_SCREEN_BLANK := true
 
+# SELinux
+-include device/qcom/sepolicy/sepolicy.mk
+
 BOARD_SEPOLICY_DIRS += \
     device/sony/fusion3-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    file_contexts \
-    property_contexts \
-    te_macros \
     bluetooth_loader.te \
     bridge.te \
     camera.te \
@@ -168,6 +168,7 @@ BOARD_SEPOLICY_UNION += \
     domain.te \
     drmserver.te \
     file.te \
+    file_contexts \
     kickstart.te \
     init.te \
     init_shell.te \
@@ -175,11 +176,13 @@ BOARD_SEPOLICY_UNION += \
     mediaserver.te \
     mpdecision.te \
     netmgrd.te \
+    property_contexts \
     qmux.te \
     rild.te \
     surfaceflinger.te \
     system_server.te \
     tee.te \
+    te_macros \
     thermald.te \
     ueventd.te \
     wpa_supplicant.te
