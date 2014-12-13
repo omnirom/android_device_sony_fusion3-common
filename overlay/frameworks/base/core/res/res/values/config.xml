@@ -139,6 +139,12 @@
          movement threshold where scrolling should begin. -->
     <dimen name="config_viewConfigurationTouchSlop">13dp</dimen>
 
-    <!-- Enable lockscreen translucent decor -->
+    <!-- Enable translucent lockscreen decor -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Whether UI for multi user should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
 </resources>
