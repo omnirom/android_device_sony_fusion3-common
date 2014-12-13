@@ -82,6 +82,7 @@ BOARD_USE_SONY_MACUPDATE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Graphics
+BOARD_EGL_CFG := device/sony/fusion3-common/rootdir/system/lib/egl/egl.cfg
 TARGET_QCOM_DISPLAY_VARIANT := caf
 TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
