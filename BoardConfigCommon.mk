@@ -134,36 +134,7 @@ TW_NO_USB_STORAGE := true
 TW_NO_SCREEN_BLANK := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/sony/fusion3-common/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    bluetooth_loader.te \
-    bridge.te \
-    camera.te \
-    device.te \
-    dhcp.te \
-    domain.te \
-    drmserver.te \
-    file.te \
-    file_contexts \
-    init.te \
-    init_shell.te \
-    kickstart.te \
-    mac_update.te \
-    mediaserver.te \
-    mpdecision.te \
-    netmgrd.te \
-    property_contexts \
-    qmux.te \
-    rild.te \
-    surfaceflinger.te \
-    system_server.te \
-    tee.te \
-    te_macros \
-    thermald.te \
-    ueventd.te \
-    wpa_supplicant.te
+include device/qcom/sepolicy/sepolicy.mk
 
 # CMHW
 BOARD_HARDWARE_CLASS := device/sony/fusion3-common/cmhw
