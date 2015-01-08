@@ -198,6 +198,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.handset.mic=analog \
     persist.audio.lowlatency.rec=false \
     ro.qc.sdk.audio.fluencetype=none \
+    qcom.hw.aac.encoder=true \
     lpa.decode=true
 
 # Bluetooth
