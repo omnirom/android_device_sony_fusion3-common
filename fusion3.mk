@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.use-awesome=true
+    persist.sys.media.use-awesome=true
 
 # Sensors
 PRODUCT_PACKAGES += \
