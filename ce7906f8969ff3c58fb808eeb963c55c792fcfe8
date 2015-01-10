@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b25f591_89333d11",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-01-10T19:53:42Z",
+      "side": 1,
+      "message": "should be\n/sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl-2/brightness",
+      "revId": "ce7906f8969ff3c58fb808eeb963c55c792fcfe8",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
