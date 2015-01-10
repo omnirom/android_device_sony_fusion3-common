@@ -136,7 +136,9 @@ BOARD_SEPOLICY_UNION += \
     property_contexts \
     qmux.te \
     rild.te \
+    servicemanager.te \
     surfaceflinger.te \
+    system_app.te \
     system_server.te \
     tee.te \
     te_macros \
