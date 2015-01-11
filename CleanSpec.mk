@@ -57,6 +57,7 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libhardware_le
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/modules/wlan.ko)
 $(call add-clean-step, rm -f $(PRODUCT_OUT)/root/default.prop)
 $(call add-clean-step, rm -f $(PRODUCT_OUT)/recovery/root/default.prop)
+$(call add-clean-step, rm -f $(PRODUCT_OUT)/recovery/root/charger)
 $(call add-clean-step, rm -f $(PRODUCT_OUT)/system/build.prop)
 
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/combinedroot/init)
