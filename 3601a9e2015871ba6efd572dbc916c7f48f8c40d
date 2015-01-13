@@ -16,6 +16,24 @@
       "revId": "3601a9e2015871ba6efd572dbc916c7f48f8c40d",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b25f591_af6ab9e7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-01-13T20:17:16Z",
+      "side": 1,
+      "message": "just checked, this could be - anyway, this is just a random commit with flags I was suggested to add - we actually don\u0027T need legacy mmap either etc.",
+      "parentUuid": "8b25f591_4fcdc586",
+      "revId": "3601a9e2015871ba6efd572dbc916c7f48f8c40d",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
