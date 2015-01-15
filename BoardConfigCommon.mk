@@ -133,39 +133,28 @@ TW_NO_USB_STORAGE := true
 TW_NO_SCREEN_BLANK := true
 
 # SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 BOARD_SEPOLICY_DIRS += \
     device/sony/fusion3-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    bluetooth_loader.te \
-    bridge.te \
-    camera.te \
-    device.te \
-    dhcp.te \
-    domain.te \
-    drmserver.te \
-    file.te \
     file_contexts \
+    device.te \
+    file.te \
+    illumination.te \
     init.te \
-    init_shell.te \
-    kickstart.te \
     mac_update.te \
     mediaserver.te \
     mpdecision.te \
-    netd.te \
-    netmgrd.te \
-    property_contexts \
-    qmux.te \
-    rild.te \
-    servicemanager.te \
-    surfaceflinger.te \
+    recovery.te \
     system_app.te \
+    system_monitor.te \
     system_server.te \
-    tee.te \
-    te_macros \
-    thermald.te \
-    ueventd.te \
-    wpa_supplicant.te
+    tad.te \
+    ta_qmi_client.te \
+    updatemiscta.te \
+    wpa.te
 
 # Logd
 TARGET_USES_LOGD := false
