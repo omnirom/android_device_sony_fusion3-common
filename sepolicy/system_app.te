@@ -1,1 +1,1 @@
-allow system_app system_app_data_file:file { execute execute_no_trans };
+allow system_app sysfs_touchpanel:file rw_file_perms;
