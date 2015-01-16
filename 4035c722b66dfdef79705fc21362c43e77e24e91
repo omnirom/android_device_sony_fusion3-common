@@ -16,6 +16,24 @@
       "revId": "4035c722b66dfdef79705fc21362c43e77e24e91",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b25f591_b5804ac7",
+        "filename": "custombootimg.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-01-16T20:40:39Z",
+      "side": 1,
+      "message": "If you mean the recovery ramdisk cpio file, I think we should keep it - it will be used as a fallback should the FOTA image be faulty.",
+      "parentUuid": "8b25f591_554c76e3",
+      "revId": "4035c722b66dfdef79705fc21362c43e77e24e91",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
