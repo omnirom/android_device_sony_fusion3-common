@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b25f591_952d0efc",
+        "filename": "combinedroot/init.sh",
+        "patchSetId": 8
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-01-16T17:19:08Z",
+      "side": 1,
+      "message": "busybox mknod -m 600 ${BOOTREC_FOTA} b 179 0",
+      "revId": "e169200c28b278faae6b909aa0759cf1767200e4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b25f591_d5378649",
+        "filename": "combinedroot/init.sh",
+        "patchSetId": 8
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-01-16T17:19:08Z",
+      "side": 1,
+      "message": "# use this here just for tests reasons\n# during normal boot by checking if the file was extracted\n# if it is ok then we can remove it\n\nextract_elf_ramdisk -i ${BOOTREC_FOTA} -o /sbin/ramdisk-recovery.cpio -t / -d\n\n# or\n\nextract_elf_ramdisk -i ${BOOTREC_FOTA} -o /sbin/ramdisk-recovery.cpio -t / -c\n\nbusybox ls -l /sbin",
+      "revId": "e169200c28b278faae6b909aa0759cf1767200e4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
