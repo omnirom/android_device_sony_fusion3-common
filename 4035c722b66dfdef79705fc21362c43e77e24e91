@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b25f591_554c76e3",
+        "filename": "custombootimg.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-01-16T17:21:21Z",
+      "side": 1,
+      "message": "I think that we will not use this file (from combinedroot folder) since we will extract the recovery from fota kernel partition. I think it can be dropped.",
+      "revId": "4035c722b66dfdef79705fc21362c43e77e24e91",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
