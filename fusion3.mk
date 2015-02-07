@@ -147,7 +147,8 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     librs_jni \
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory \
+    p2p_supplicant.conf
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
