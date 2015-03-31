@@ -4,3 +4,6 @@ allow mdm_helper cache_file:file create_file_perms;
 
 # Connect to tad
 unix_socket_connect(mdm_helper, tad, tad)
+
+# Block device
+allow mdm_helper block_device:blk_file { getattr };

@@ -33,3 +33,5 @@
 /system/bin/ta_qmi_client           u:object_r:ta_qmi_client_exec:s0
 /system/bin/tad_static              u:object_r:tad_exec:s0
 /system/bin/updatemiscta            u:object_r:updatemiscta_exec:s0
+
+/dev/block/mmcblk0(.*)              u:object_r:mmc_block_device:s0
