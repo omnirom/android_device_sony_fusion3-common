@@ -70,6 +70,7 @@ HAVE_ADRENO_SOURCE := false
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_HAS_RIL_LEGACY_PAP := true
+BOARD_RIL_CLASS := ../../../device/sony/fusion3-common/ril/
 
 # Sensors
 SOMC_CFG_SENSORS := true
