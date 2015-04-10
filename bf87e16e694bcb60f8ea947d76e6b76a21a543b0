@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b22818b_411c9f78",
+        "filename": "overlay-radio/packages/services/Telephony/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-04-10T11:10:32Z",
+      "side": 1,
+      "message": "Remove this.",
+      "revId": "bf87e16e694bcb60f8ea947d76e6b76a21a543b0",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
