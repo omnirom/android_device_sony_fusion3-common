@@ -55,6 +55,12 @@ if [ $? -eq 42 ] || busybox grep -q warmboot=0x77665502 /proc/cmdline ; then
 	busybox mount -o remount,rw /
 	busybox ln -sf /sbin/busybox /sbin/sh
 	extract_elf_ramdisk -i ${BOOTREC_FOTA} -o /sbin/ramdisk-recovery.cpio -t / -c
+	if [ $? -eq 255 ]; then
+		# Try again!
+		busybox echo 'Unable to extract FOTAKernel ramdisk! Retrying, not using gunzip...' >>boot.txt
+		extract_elf_ramdisk -i ${BOOTREC_FOTA} -o /sbin/ramdisk-recovery.cpio -t / -d
+		export USE_LZMA=true
+	fi
 	busybox rm /sbin/sh
 	load_image=/sbin/ramdisk-recovery.cpio
 else
@@ -66,6 +72,10 @@ else
 fi
 
 # unpack the ramdisk image
+if [ "$USE_LZMA" = "true" ]; then
+	busybox mv /sbin/ramdisk-recovery.cpio /sbin/ramdisk-recovery.cpio.lzma
+	busybox lzma -d /sbin/ramdisk-recovery.cpio.lzma
+fi
 busybox cpio -ui < ${load_image}
 
 busybox umount /proc
