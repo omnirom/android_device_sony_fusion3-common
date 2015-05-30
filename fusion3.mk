@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     e2fsck
 
+# For formatting data after unlock
+PRODUCT_PACKAGES += \
+    setup_fs
+
 # Custom init / uevent
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
@@ -179,6 +183,27 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/thermald.conf:system/etc/thermald.conf \
     $(COMMON_PATH)/rootdir/system/etc/disable_msm_thermal.sh:system/etc/disable_msm_thermal.sh
+    
+# Bootlogo
+PRODUCT_COPY_FILES += \
+     $(COMMON_PATH)/bootlogos/$(TARGET_SCREEN_WIDTH)x$(TARGET_SCREEN_HEIGHT).rle:root/logo.rle
+     
+# Offmode charging animation
+PRODUCT_COPY_FILES += \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_01.png:system/semc/chargemon/data/charging_animation_01.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_02.png:system/semc/chargemon/data/charging_animation_02.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_03.png:system/semc/chargemon/data/charging_animation_03.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_04.png:system/semc/chargemon/data/charging_animation_04.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_05.png:system/semc/chargemon/data/charging_animation_05.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_06.png:system/semc/chargemon/data/charging_animation_06.png \
+     $(COMMON_PATH)/rootdir/system/semc/charging_animation_07.png:system/semc/chargemon/data/charging_animation_07.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_01.png:system/semc/chargemon/data/non-charging_animation_01.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_02.png:system/semc/chargemon/data/non-charging_animation_02.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_03.png:system/semc/chargemon/data/non-charging_animation_03.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_04.png:system/semc/chargemon/data/non-charging_animation_04.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_05.png:system/semc/chargemon/data/non-charging_animation_05.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_06.png:system/semc/chargemon/data/non-charging_animation_06.png \
+     $(COMMON_PATH)/rootdir/system/semc/non-charging_animation_07.png:system/semc/chargemon/data/non-charging_animation_07.png
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
