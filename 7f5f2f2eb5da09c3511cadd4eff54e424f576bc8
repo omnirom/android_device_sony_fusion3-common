@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "18e79d95_9c1ebd72",
+        "filename": "fusion3.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-06-14T22:09:07Z",
+      "side": 1,
+      "message": "duplicate",
+      "revId": "7f5f2f2eb5da09c3511cadd4eff54e424f576bc8",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
