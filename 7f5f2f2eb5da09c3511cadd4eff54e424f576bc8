@@ -16,6 +16,29 @@
       "revId": "7f5f2f2eb5da09c3511cadd4eff54e424f576bc8",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18e79d95_fc0ee93f",
+        "filename": "fusion3.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-06-15T04:46:45Z",
+      "side": 1,
+      "message": "I don\u0027t think so!\nSince one entry is for PRODUCT_PACKAGES and other is for PRODUCT_BOOT_JARS\nNot sure if we need both.",
+      "range": {
+        "startLine": 161,
+        "startChar": 10,
+        "endLine": 161,
+        "endChar": 11
+      },
+      "revId": "7f5f2f2eb5da09c3511cadd4eff54e424f576bc8",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
