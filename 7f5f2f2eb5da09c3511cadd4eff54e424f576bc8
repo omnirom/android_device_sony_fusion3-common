@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "18e79d95_170de63c",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-06-16T00:16:21Z",
+      "side": 1,
+      "message": "we should drop it (BOARD_VENDOR :\u003d sony) and get vendor (DonkeyCoyote) updated.\n\nit will fix extract_elf_ramdisk conflit.",
+      "range": {
+        "startLine": 26,
+        "startChar": 16,
+        "endLine": 26,
+        "endChar": 20
+      },
+      "revId": "7f5f2f2eb5da09c3511cadd4eff54e424f576bc8",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "18e79d95_9c1ebd72",
         "filename": "fusion3.mk",
         "patchSetId": 6
