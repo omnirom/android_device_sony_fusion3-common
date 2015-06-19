@@ -138,7 +138,6 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
-    property_contexts \
     device.te \
     file.te \
     illumination.te \
