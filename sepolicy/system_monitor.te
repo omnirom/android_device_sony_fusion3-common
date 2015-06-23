@@ -26,3 +26,8 @@ qmux_socket(system_monitor)
 
 # Connect to illumination
 unix_socket_connect(system_monitor, illumination, illumination)
+
+# Connect to TA
+allow system_monitor tad:unix_stream_socket connectto;
+allow system_monitor tad_socket:sock_file write;
+
