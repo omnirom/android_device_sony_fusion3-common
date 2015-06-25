@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_a45ccc1c",
+        "filename": "fusion3.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-06-25T21:37:21Z",
+      "side": 1,
+      "message": "will this obsolete chargemon/the chargemon animations (.pngs)?",
+      "range": {
+        "startLine": 148,
+        "startChar": 4,
+        "endLine": 148,
+        "endChar": 22
+      },
+      "revId": "d270adc16004e756fde40f32ef7aee296d98e197",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
