@@ -130,8 +130,6 @@ on boot
     # Allow QMUX daemon to assign port open wait time
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
-    setprop ro.telephony.call_ring.multiple false
-
     # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
@@ -270,9 +268,6 @@ on post-fs-data
 
     # Camera
     mkdir /data/camera 0771 root camera
-
-    # Enable Power save functionality for modem
-    setprop persist.radio.add_power_save 1
 
     setprop vold.post_fs_data_done 1
 
@@ -482,7 +477,7 @@ on property:bluetooth.hciattach=false
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/bin/qmuxd
-    class late_start
+    class core
     user radio
     group radio audio bluetooth gps qcom_diag net_bt_stack
     disabled
