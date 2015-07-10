@@ -124,8 +124,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
-TARGET_NO_SEPARATE_RECOVERY := true
-BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/fusion3-common/custombootimg.mk
 TARGET_RECOVERY_FSTAB := device/sony/fusion3-common/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
