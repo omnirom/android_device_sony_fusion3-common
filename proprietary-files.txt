@@ -136,7 +136,6 @@ lib/liboemcrypto.so
 lib/libpin-cache.so
 lib/libprotobuf-c.so
 lib/libqcci_legacy.so
-lib/libqc-opt.so:vendor/lib/libqc-opt.so
 lib/libqdi.so
 lib/libqdp.so
 lib/libqmi_client_qmux.so
@@ -225,6 +224,7 @@ vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
+vendor/lib/libqti-perfd-client.so
 vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libwvdrm_L1.so
