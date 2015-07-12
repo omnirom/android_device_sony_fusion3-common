@@ -136,6 +136,12 @@ on boot
 
     setprop ro.telephony.call_ring.multiple false
 
+    # Create PERFD deamon related dirs
+    mkdir /data/misc/perfd 0755 root system
+    chmod 2755 /data/misc/perfd
+    mkdir /data/system/perfd 0770 root system
+    chmod 2770 /data/system/perfd
+
     # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
