@@ -37,7 +37,6 @@ TARGET_CPU_VARIANT := krait
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
-CM_POWERHAL_EXTENSION := qcom
 
 # Kernel information
 BOARD_KERNEL_BASE     := 0x80200000
