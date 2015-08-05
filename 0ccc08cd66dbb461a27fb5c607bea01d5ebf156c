@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_0af93a49",
+        "filename": "fusion3.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2015-08-05T21:51:35Z",
+      "side": 1,
+      "message": "WHITESPACE :(",
+      "revId": "0ccc08cd66dbb461a27fb5c607bea01d5ebf156c",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
