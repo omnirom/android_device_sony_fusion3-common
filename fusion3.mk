@@ -185,6 +185,19 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/usr/keylayout/mhl-rcp.kl:system/usr/keylayout/mhl-rcp.kl \
     $(COMMON_PATH)/rootdir/system/usr/keylayout/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl
 
+# GPS
+PRODUCT_PACKAGES += \
+    libloc_adapter \
+    libloc_eng \
+    libloc_api_v02 \
+    libloc_ds_api \
+    libloc_core \
+    libizat_core \
+    libgeofence \
+    libgps.utils \
+    gps.msm8960 \
+    flp.msm8960
+
 # Healthd
 PRODUCT_PACKAGES += \
     charger_res_images
