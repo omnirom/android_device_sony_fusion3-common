@@ -146,6 +146,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hci_qcomm_init
 
+# GPS
+PRODUCT_PACKAGES += \
+    libgps.utils \
+    libloc_core \
+    libloc_eng \
+    gps.msm8960
+
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -164,13 +171,13 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     lights.qcom
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.msm8960
-
 # WIFI MAC update
 PRODUCT_PACKAGES += \
     mac-update
+
+# Thermal management
+PRODUCT_PACKAGES += \
+    thermanager
 
 # FM Radio
 PRODUCT_COPY_FILES += \
@@ -215,6 +222,7 @@ PRODUCT_PACKAGES += \
 # Custom init / uevent
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+    $(COMMON_PATH)/rootdir/init.sony.rc:root/init.sony.rc \
     $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(COMMON_PATH)/rootdir/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
     $(COMMON_PATH)/rootdir/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
@@ -228,11 +236,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/sbin/wait4tad_static:root/sbin/wait4tad_static \
     $(COMMON_PATH)/rootdir/system/bin/tad_static:system/bin/tad_static
 
-# Thermal monitor configuration
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/thermald.conf:system/etc/thermald.conf \
-    $(COMMON_PATH)/rootdir/system/etc/disable_msm_thermal.sh:system/etc/disable_msm_thermal.sh
-
 # Bootlogo
 PRODUCT_COPY_FILES += \
      $(COMMON_PATH)/bootlogos/$(TARGET_SCREEN_WIDTH)x$(TARGET_SCREEN_HEIGHT).rle:root/logo.rle
@@ -240,6 +243,10 @@ PRODUCT_COPY_FILES += \
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
+
+# USB OTG support
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=true
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -275,7 +282,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+    ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,9 +299,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Hostapd
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # SoftAP
 PRODUCT_PACKAGES += \
