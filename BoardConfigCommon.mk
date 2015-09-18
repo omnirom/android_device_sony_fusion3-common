@@ -27,6 +27,9 @@ TARGET_BOARD_PLATFORM := msm8960
 BOARD_VENDOR_PLATFORM := fusion3
 BOARD_LIB_DUMPSTATE := libdumpstate.sony
 
+# Bionic
+MALLOC_IMPL := dlmalloc
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
@@ -39,13 +42,10 @@ TARGET_CPU_VARIANT := krait
 TARGET_POWERHAL_VARIANT := qcom
 CM_POWERHAL_EXTENSION := qcom
 
-# Blob compatibility
-TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
-
 # Kernel information
 BOARD_KERNEL_BASE     := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE  := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=22 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=enforcing androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE  := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=22 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive androidboot.bootdevice=msm_sdcc.1
 BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE  := kernel/sony/apq8064
 
@@ -90,19 +90,10 @@ BLUE_LED_PATH := /sys/class/leds/lm3533-blue/brightness
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
-BOARD_HAS_RIL_LEGACY_PAP := true
 BOARD_RIL_CLASS := ../../../device/sony/fusion3-common/ril/
 
 # Lights HAL
 TARGET_PROVIDES_FUSION3_LIBLIGHT := true
-
-# Sensors
-SOMC_CFG_SENSORS := true
-SOMC_CFG_SENSORS_ACCEL_BMA250NA_INPUT := yes
-SOMC_CFG_SENSORS_COMPASS_AK8963 := yes
-SOMC_CFG_SENSORS_GYRO_MPU3050 := yes
-SOMC_CFG_SENSORS_LIGHT_LM3533 := yes
-SOMC_CFG_SENSORS_PROXIMITY_APDS9702 := yes
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -187,10 +178,10 @@ BOARD_SEPOLICY_UNION += \
     servicemanager.te \
     shell.te \
     system_app.te \
-    system_monitor.te \
     system_server.te \
     tad.te \
     ta_qmi_client.te \
+    thermanager.te \
     updatemiscta.te \
     wpa.te \
     zygote.te
