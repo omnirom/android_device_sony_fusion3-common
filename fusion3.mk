@@ -164,13 +164,13 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     lights.qcom
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.msm8960
-
 # WIFI MAC update
 PRODUCT_PACKAGES += \
     mac-update
+
+# Thermal management
+PRODUCT_PACKAGES += \
+    thermanager
 
 # FM Radio
 PRODUCT_COPY_FILES += \
@@ -215,6 +215,7 @@ PRODUCT_PACKAGES += \
 # Custom init / uevent
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+    $(COMMON_PATH)/rootdir/init.sony.rc:root/init.sony.rc \
     $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(COMMON_PATH)/rootdir/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
     $(COMMON_PATH)/rootdir/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
@@ -230,8 +231,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal monitor configuration
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/thermald.conf:system/etc/thermald.conf \
-    $(COMMON_PATH)/rootdir/system/etc/disable_msm_thermal.sh:system/etc/disable_msm_thermal.sh
+    $(COMMON_PATH)/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml
 
 # Bootlogo
 PRODUCT_COPY_FILES += \
@@ -275,7 +275,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+    ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
