@@ -295,9 +295,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Hostapd
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # SoftAP
 PRODUCT_PACKAGES += \
