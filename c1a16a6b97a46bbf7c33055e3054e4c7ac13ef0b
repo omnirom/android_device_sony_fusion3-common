@@ -22,6 +22,30 @@
       "revId": "c1a16a6b97a46bbf7c33055e3054e4c7ac13ef0b",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ab30f9cd_adc3a961",
+        "filename": "custombootimg.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000799
+      },
+      "writtenOn": "2016-11-27T15:09:17Z",
+      "side": 1,
+      "message": "Done, thanks!",
+      "parentUuid": "ab30f9cd_addac94d",
+      "range": {
+        "startLine": 9,
+        "startChar": 12,
+        "endLine": 9,
+        "endChar": 25
+      },
+      "revId": "c1a16a6b97a46bbf7c33055e3054e4c7ac13ef0b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
